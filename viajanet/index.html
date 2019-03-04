@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+   <title>ViajaNet - André Mota</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <script src="/js/angular.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="container bg">
+    <div class="row pt-5 px-5">
+      <div class="col-md-2 col-12 tab text-center pt-2">
+        <p class="tit">
+          Passagens Aéreas
+        </p>
+      </div>
+    </div>  
+    <div class="row px-5">
+      <div class="col-md-10 col-12 box">
+        <h2 class="pl-3 pt-3 d-none d-md-block">
+          Encontre os melhores preços e boa viagem!
+        </h2>
+        <input type="radio" class="ml-3 mt-3 d-inline" checked="">
+        <span class="sel pl-1">Ida e Volta</span>
+      </div>
+      <div class="col-md-2 box py-3 d-none d-md-block">
+        <img src="images/econometro.png" alt="Econômetro" title="Econômetro">
+      </div>
+      <div class="col-12 pt-md-0 pt-3 box busca">
+        <form autocomplete="on" autocomplete-min-char-tosearch="3">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="origem">Origem</label>
+              <input type="origem" class="form-control cor" tabindex="1" id="origem" placeholder="São Paulo,Brasil - (SAO - Todos os Aeroportos)">
+            </div>
+            <div class="form-group col-md-6">
+              <label for="destino">Destino</label>
+              <input type="destino" class="form-control cor" tabindex="2" id="destino" placeholder="Miami,Miami,Estados Unidos da América (MIA)">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label for="ida">Data de Ida</label>
+              <input type="text" class="form-control" tabindex="3" id="ida">
+            </div>
+            <div class="form-group col-md-3">
+                <label for="volta">Data de Volta</label>
+                <input type="text" class="form-control" tabindex="4" id="volta">
+              </div>
+            <div class="form-group col-md-2 col-4">
+              <label for="adult">Adultos</label>
+              <select tabindex="5" id="adult" class="form-control s1">
+                <option>Nenhum</option>
+                <option>1 adulto</option>
+                <option selected>2 adultos</option>
+                <option>3 adultos</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2 col-4">
+              <label for="child">Crianças</label>
+              <select tabindex="6" id="child" class="form-control s1">
+                <option selected>Nenhuma</option>
+                <option>1 criança</option>
+                <option>2 crianças</option>
+                <option>3 crianças</option>
+              </select>
+              <p class="sub d-block d-md-none">2 a 11 anos</p>
+            </div>
+            <div class="form-group col-md-2 col-4">
+              <label for="newBorn">Bebês</label>
+              <select tabindex="7" id="newBorn" class="form-control s1">
+                <option selected>Nenhum</option>
+                <option>1 bebê</option>
+                <option>2 bebês</option>
+                <option>3 bebês</option>
+              </select>
+              <p class="sub d-block d-md-none">0 a 23 meses</p>
+            </div>
+          </div>
+          <p class="d-block d-md-none">+ Opções de busca</p>
+      </div>
+    </div>
+    <div class="row px-5">
+      <div class="col-12 text-center px-0">
+        <button type="submit" class="col-12 btn btn-search">Pesquisar</button>
+      </div>
+    </div> 
+        </form>
+  </div>
+</body>
+</html>
